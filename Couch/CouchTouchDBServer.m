@@ -51,7 +51,7 @@
 - (id)init {
     // Avoid link-time dependency on TouchDB; look up classes dynamically:
     Class classTDURLProtocol = NSClassFromString(@"TDURLProtocol");
-    Class classTDServer = NSClassFromString(@"TD_Server");
+    Class classTDServer = NSClassFromString(@"TDServer");
     NSAssert(classTDURLProtocol && classTDServer,
              @"Not linked with TouchDB framework (or you didn't use the -ObjC linker flag)");
         
